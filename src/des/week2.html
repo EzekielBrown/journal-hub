@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <!-- ===== BOX ICONS ===== -->
+        <link href='https://cdn.jsdelivr.net/npm/boxicons@2.0.5/css/boxicons.min.css' rel='stylesheet'>
+
+        <!-- ===== CSS ===== -->
+        <link rel="stylesheet" href="../../src/styles/index.css">
+
+        <title>Ezekiel's Journal</title>
+    </head>
+    <body id="body-pd">
+        <header class="header" id="header">
+            <div class="header__toggle">
+                <i class='bx bx-menu' id="header-toggle"></i>
+            </div>
+
+            <div class="header__img">
+                <img src="assets/img/perfil.jpg" alt="">
+            </div>
+        </header>
+
+        <div class="l-navbar" id="nav-bar">
+            <nav class="nav">
+                <div>
+                    <a href="../../index.js" class="nav__logo">
+                        <i class='bx bxs-user-circle nav__logo-icon'></i>
+                        <span class="nav__logo-name">Ezekiel Brown</span>
+                    </a>
+
+                    <div class="nav__list">
+
+                        <a href="../../index.html" class="nav__link">
+                            <i class='bx bx-home nav__icon' ></i>
+                            <span class="nav__name">Home</span>
+                        </a>
+
+                        <a href="../../src/desindex.html" class="nav__link active">
+                        <i class='bx bx-brush nav__icon' ></i>
+                            <span class="nav__name">DES501</span>
+                        </a>
+                        
+                        <a href="../../src/comindex.html" class="nav__link ">
+                            <i class='bx bx-message-rounded nav__icon' ></i>
+                            <span class="nav__name">COM502</span>
+                        </a>
+
+                        <a href="../../src/sdvindex.html" class="nav__link">
+                            <i class='bx bx-code-block nav__icon' ></i>
+                            <span class="nav__name">SDV503</span>
+                        </a>
+
+                        <a href="../../src/csaindex.html" class="nav__link">
+                            <i class='bx bx-chip nav__icon' ></i>
+                            <span class="nav__name">CSA503</span>
+                        </a>
+
+                    </div>
+                </div>
+
+                <a href="https://github.com/EzekielBrown" class="nav__link">
+                    <i class='bx bxl-github nav__icon' ></i>
+                    <span class="nav__name">/EzekielBrown</span>
+                </a>
+            </nav>
+        </div>
+
+        <h1>Week 2</h1>
+
+        
+        This week learning was all about how to manage the branch system within VSC, github and devops. We learned about how to add and manage other within devops. The beginnings of product planning as we got given a bunch of issues that a "client" has been faces, identified the problems and added them to a job list within devops. 
+        
+        I have been enjoying getting to learn VSC and some of its features. Seeing my work on github is pretty exciting. Especially when it comes to .md file type as it displays upon github. Still working the kinks out with branching but there are some online website that have been helping me understand more easily as im a hands on learner.
+        
+        There isn't much that i have not enjoyed so far. Pairing with others that are not as passionate to learn about this subject could appose a problem though. My group that i got assigned did have different opinions than i did. We did struggle to add people to the project on devops. I had it set to private and it wasn't working properly. Changed to public and the others in my group could see the repo and edit. I still need to learn to use the main branch less often and use the dev branch more. It feels like i commit way too many times. Markdown feels like a pain to use. Much more comfortable in HTML.
+        
+        This week has been very productive for me as i have spent a lot of out of school time to learn html,css, markdown, xd, and github. Need to learn javascript. <br>
+        
+        <details closed>
+            <summary>Git Branching</summary> 
+        
+        Learning Tool: [Learn Git Branching](learngitbranching.js.org/)
+        
+        Git branching is very useful for when you are developing and coding. It allows you to creates sub versions of your final product ready to be reviewed. Once your code has be reviewed by someone else *(they might find ways to making your code easier to read and more modular)* then it can be pushed into your main branch. You can either use `git switch` or `git merge`. Git switch is looking to replace git merge in the future. Git merging is for merging branches into one another. You should not merge your main branch into another branch. Only merge branches into main. It is recommended not to use rebase. <br><br> To branch in Visual Studio Code use the command `git branch dev`. <br> To create a branch using Github, click the drop down and simply type in your new name branch <br> ![Github creating branch](/src/des501//img/ghcb.PNG) <br> To create a branch in devops 
+        <br>
+        Repos > Branches > New Branch
+        
+        <details>
+        <summary>Git Branching Exercises</summary>
+        
+        ### Branching in Git
+        *Exercise Introduction sequence: 02*
+        
+        This exercise teaches you how to create a branch and then select it.
+        
+        commands used
+        `git branch bugFix`
+        `git checkout bugFix`
+        
+        <img src="/src/des501/img/lgbe2.PNG" alt="Git Branching Exercise 02" width="200"/>
+        
+        
+        ### Merging in Git
+        *Exercise Introduction sequence: 03*
+        
+        This exercise teaches you how to create, select and then finally merge branches into each other
+        
+        commands used
+        `git branch bugFix`
+        `git checkout bugFix`
+        `git commit`
+        `git checkout main`
+        `git commit`
+        `git merge bugFix`
+        
+        
+        <img src="/src/des501/img/lgbe3.PNG" alt="Git Branching Exercise 03" width="200"/>
+        
+        ### Rebase in Git
+        *Exercise Introduction sequence: 04*
+        
+        Recommended not to use
+        
+        This exercise teaches you how to rebase 
+        
+        commands used
+        `git branch bugFix`
+        `git checkout bugFix`
+        `git commit`
+        `git checkout main`
+        `git commit`
+        `git checkout bugFix`
+        `git rebase main`
+        
+        <img src="/src/des501/img/lgbe4.PNG" alt="Git Branching Exercise 03" width="200"/>
+        
+        ###Other useful commands
+        
+        `git branch --list`
+        *allows you to view a list branches*
+        
+        </details>
+        </details>
+
+        <details closed>
+            <summary>Devops and Github</summary>
+            
+            Both platforms are very easily to use and the ui is nicely presented. I do prefer using github at this moment. I like the layout better. I find that it is down to personal preference on which one to use.
+            
+            What devops does well is that it is more focus on the visuals. There are widgets you can get for your dashboard. It is easy to create a job with multiple tasks and assign it to a work mate. 
+            
+            What github does well that i found well presented. Everything is not too many clicks away. .md files preview nicely in github as well. 
+            
+            Github: [My Github](https://github.com/EzekielBrown)
+            Devops: [My Devops](https://dev.azure.com/Zek-Brown)
+            
+            </details>
+            
+            </details>
+            </details>
+        <!--===== MAIN JS =====-->
+        <script src="../../src/scripts/index.js"></script>
+    </body>
+</html>
