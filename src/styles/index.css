@@ -8,8 +8,8 @@
 
   /*===== Colors =====*/
   --first-color: #2F323A;
-  --first-color-light: #ffffff;
-  --white-color: #ffae00;
+  --first-color-light: antiquewhite;
+  --orange-color: #ffae00;
   
   /*===== Font and typography =====*/
   --body-font: 'Nunito', sans-serif;
@@ -31,6 +31,8 @@ body{
   font-family: var(--body-font);
   font-size: var(--normal-font-size);
   transition: .5s;
+  background-color: #252525;
+  color: antiquewhite;
 }
 
 a{
@@ -48,7 +50,7 @@ a{
   align-items: center;
   justify-content: space-between;
   padding: 0 1rem;
-  background-color: var(--white-color);
+  background-color: var(--orange-color);
   z-index: var(--z-fixed);
   transition: .5s;
 }
@@ -107,11 +109,11 @@ a{
 
 .nav__logo-icon{
   font-size: 1.25rem;
-  color: var(--white-color);
+  color: var(--orange-color);
 }
 
 .nav__logo-name{
-  color: var(--white-color);
+  color: var(--orange-color);
   font-weight: 700;
 }
 
@@ -123,7 +125,7 @@ a{
 }
 
 .nav__link:hover{
-  color: var(--white-color);
+  color: var(--orange-color);
 }
 
 .nav__icon{
@@ -142,7 +144,7 @@ a{
 
 /*Active links*/
 .active{
-  color: var(--white-color);
+  color: var(--orange-color);
 }
 
 .active::before{
@@ -151,7 +153,7 @@ a{
   left: 0;
   width: 2px;
   height: 32px;
-  background-color: var(--white-color);
+  background-color: var(--orange-color);
 }
 
 /* ===== MEDIA QUERIES=====*/
