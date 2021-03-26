@@ -7,9 +7,9 @@
   --nav-width: 68px;
 
   /*===== Colors =====*/
-  --first-color: #2F323A;
-  --first-color-light: antiquewhite;
-  --orange-color: #ffae00;
+  --first-color: antiquewhite;
+  --first-color-light: #2F323A;
+  --orange-color: #e60f4f;
   
   /*===== Font and typography =====*/
   --body-font: 'Nunito', sans-serif;
@@ -31,7 +31,7 @@ body{
   font-family: var(--body-font);
   font-size: var(--normal-font-size);
   transition: .5s;
-  background-color: #252525;
+  background-color: #2F323A;
   color: antiquewhite;
 }
 
