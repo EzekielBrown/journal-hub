@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <!-- ===== BOX ICONS ===== -->
+        <link href='https://cdn.jsdelivr.net/npm/boxicons@2.0.5/css/boxicons.min.css' rel='stylesheet'>
+
+        <!-- ===== CSS ===== -->
+        <link rel="stylesheet" href="../../src/styles/index.css">
+
+        <title>CSS Units</title>
+    </head>
+    <body id="body-pd">
+        <header class="header" id="header">
+            <div class="header__toggle">
+                <i class='bx bx-menu' id="header-toggle"></i>
+            </div>
+
+            <div class="header__img">
+                <img src="assets/img/perfil.jpg" alt="">
+            </div>
+        </header>
+
+        <div class="l-navbar" id="nav-bar">
+            <nav class="nav">
+                <div>
+                    <a href="../../index.html" class="nav__logo">
+                        <i class='bx bxs-user-circle nav__logo-icon'></i>
+                        <span class="nav__logo-name">Ezekiel Brown</span>
+                    </a>
+
+                    <div class="nav__list">
+
+                        <a href="../../index.html" class="nav__link">
+                            <i class='bx bx-home nav__icon' ></i>
+                            <span class="nav__name">Home</span>
+                        </a>
+
+                        <a href="../../src/desindex.html" class="nav__link active">
+                        <i class='bx bx-brush nav__icon' ></i>
+                            <span class="nav__name">DES501</span>
+                        </a>
+                        
+                        <a href="../../src/comindex.html" class="nav__link ">
+                            <i class='bx bx-message-rounded nav__icon' ></i>
+                            <span class="nav__name">COM502</span>
+                        </a>
+
+                        <a href="../../src/sdvindex.html" class="nav__link">
+                            <i class='bx bx-code-block nav__icon' ></i>
+                            <span class="nav__name">SDV503</span>
+                        </a>
+
+                        <a href="../../src/csaindex.html" class="nav__link">
+                            <i class='bx bx-chip nav__icon' ></i>
+                            <span class="nav__name">CSA503</span>
+                        </a>
+
+                    </div>
+                </div>
+
+                <a href="https://github.com/EzekielBrown" class="nav__link">
+                    <i class='bx bxl-github nav__icon' ></i>
+                    <span class="nav__name">/EzekielBrown</span>
+                </a>
+            </nav>
+        </div>
+        <div class="journal-header">
+            <br>
+            <img src="./img/" alt="CSS Units" /> 
+            <h3>Week 9</h3>  
+            <br>
+        </div>
+
+        CSS lengths can be divided into two types. Absolute lengths and relative lengths. There are 6 absolute lengths and 9 relative lengths. The absolute length units are fixed and a length expressed in any of these will appear as exactly that size. As screen sizes vary so much, using absolute length units on a screen is not recommended. A relative length unit specifies a length one relative to another. A relative length unit scales better across different rendering mediums. <br><br>
+
+        <h3>Absolute Length</h3>
+
+        cm  -  centimeters<br>
+        mm  -  millimeters<br>
+        in  -  inches (1 = 2.54cm)<br>
+        px  -  pixels (1 = 1/96th of 1in)<br>
+        pt  -  points (1 = 1/72 of 1in)<br>
+        pc  -  picas (1 = 12pt)<br>
+
+
+
+        <h3>Relative Length</h3>
+
+        em - One em is a distance equal to the text size<br>
+        This code will set the span to 15px <br>
+        <code>
+        div {
+            font-size: 30px;
+            }
+         span {
+            font-size: 0.5em;
+          }
+        </code><br><br>
+
+        ex - x-height of the current font OR one-half of one em<br>
+        This code will set the text in the span to half the size vertically<br>
+        <code>
+            div {
+                font-size: 30px;
+              }
+              
+              span {
+                font-size: 1ex;
+              }
+           </code><br><br>
+
+        ch  -  ch is the width of the number 0 in the font.<br>
+        This code sets the font size to 3times the width of 0<br>
+        <code>
+            body {
+                font-size:16px;
+            }
+
+            div {
+                font-size: 3ch;
+            }
+        </code><br><br>
+
+        rem  -  The rem unit sets the font-size relative to the browsers base font-size, and will not inherit from its parents.<br>
+        This code translate to times 2 of the browser font size<br>
+        <code>
+            html {
+                font-size:16px;
+              }
+              
+              div {
+                font-size: 2rem;
+              }
+        </code><br><br>
+
+        vw  -  1vw = 1% of viewport width.<br>
+        This code scales with the size of the browser and will change when the browser to effected horizontally<br>
+        <code>
+            h1 {
+                font-size: 20vw;
+              }
+        </code><br><br>
+
+        vh  -   hundredths of the viewport height.<br>
+        This code scales with the size of the browser and will change when the browser to effected vertically<br>
+        <code>
+            h1 {
+                font-size: 20vh;
+              }
+        </code><br><br>
+
+        vmin  -  hundredths of whichever is smaller, the viewport width or height.<br>
+        This code, scales with the size of the browser and stops at a certain size and will not getting bigger<br>
+        <code>
+            h1 {
+                font-size: 20vh;
+              }
+        </code><br><br>
+
+        vmax  -  hundredths of whichever is larger, the viewport width or height.<br>
+        This code scales with the size of the browser and stops at a certain size and will not get smaller <br>
+        <code>
+            h1 {
+                font-size: 15vmax;
+              }
+        </code><br><br>
+
+        %  -  percentage relative to the parent element<br>
+        This code increased the div font 150% of 16px. So the new font size will be 24px.<br>
+        <code>
+            body {
+            font-size:16px;
+            }
+
+            div {
+            font-size: 150%;
+            }
+        </code><br><br>
+
+
+        <h3>Resources</h3>
+
+        <a href="https://www.w3schools.com/cssref/css_units.asp">https://www.w3schools.com/cssref/css_units.asp</a><br>
+
+
+        <!--===== MAIN JS =====-->
+        <script src="../../src/scripts/index.js"></script>
+    </body>
+</html>
